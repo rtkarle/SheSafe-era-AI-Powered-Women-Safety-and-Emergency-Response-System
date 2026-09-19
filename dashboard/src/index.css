@@ -1,0 +1,133 @@
+/* ============================================================
+   SheShield Design System — CSS Variables & Base (Light Theme)
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&display=swap');
+
+:root {
+  /* Brand Colors */
+  --color-berry: #7C3355;
+  --color-berry-dark: #5A1F3A;
+  --color-berry-light: #9B4470;
+  --color-berry-glow: rgba(124,51,85,0.18);
+  --color-berry-subtle: rgba(124,51,85,0.08);
+  --color-gold: #B8892A;
+  --color-gold-light: #D4A843;
+
+  /* Emergency */
+  --color-emergency: #C62828;
+  --color-emergency-light: #E53935;
+  --color-emergency-bg: rgba(198,40,40,0.08);
+  --color-emergency-border: rgba(198,40,40,0.25);
+
+  /* Guardian / Success */
+  --color-guardian: #2E7D32;
+  --color-guardian-light: #388E3C;
+  --color-guardian-bg: rgba(46,125,50,0.08);
+  --color-guardian-border: rgba(46,125,50,0.25);
+
+  /* Warning */
+  --color-warning: #E65100;
+  --color-warning-bg: rgba(230,81,0,0.08);
+
+  /* Backgrounds — LIGHT */
+  --color-bg: #F5F5F8;
+  --color-surface: #FFFFFF;
+  --color-surface-elevated: #F0F0F6;
+  --color-surface-high: #E8E8F0;
+
+  /* Borders */
+  --color-border: rgba(0,0,0,0.07);
+  --color-border-light: rgba(0,0,0,0.12);
+  --color-border-focus: #7C3355;
+
+  /* Text */
+  --color-text-primary: #1A1A2E;
+  --color-text-secondary: #55556A;
+  --color-text-muted: #9999AA;
+
+  /* Radius */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --radius-xl: 18px;
+  --radius-xxl: 28px;
+  --radius-full: 9999px;
+
+  /* Spacing */
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 12px;
+  --space-base: 16px;
+  --space-lg: 20px;
+  --space-xl: 24px;
+  --space-xxl: 32px;
+  --space-xxxl: 48px;
+
+  /* Typography */
+  --font-sans: 'Nunito', system-ui, 'Segoe UI', Roboto, sans-serif;
+
+  font-family: var(--font-sans);
+  font-size: 15px;
+  line-height: 1.5;
+  letter-spacing: 0.1px;
+  color: var(--color-text-primary);
+  background: var(--color-bg);
+  color-scheme: light;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Reset */
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--color-bg);
+  min-height: 100svh;
+}
+
+#root {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+h1, h2, h3, h4 {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-weight: 700;
+  color: var(--color-text-primary);
+}
+
+p { margin: 0; }
+
+button {
+  font-family: var(--font-sans);
+  cursor: pointer;
+}
+
+input {
+  font-family: var(--font-sans);
+}
+
+/* Animations */
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+
+@keyframes fade-in-up {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
