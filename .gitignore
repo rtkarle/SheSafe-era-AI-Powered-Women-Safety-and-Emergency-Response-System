@@ -1,0 +1,19 @@
+ml-service/ml-env/
+node_modules/
+.env
+*.json.local
+
+# Backend service account — NEVER commit
+backend/firebase-service-account.json
+
+# Build outputs
+dashboard/dist/
+backend/dist/
+
+# Expo
+sheshield-mobile/.expo/
+sheshield-mobile/node_modules/
+
+# OS
+.DS_Store
+Thumbs.db
